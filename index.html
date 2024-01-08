@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-800">
+    <header class="">
+        <!-- Mobile Navigation Toggle Button -->
+        <button @click="toggleNav" class="lg:hidden text-white right absolute top-0 right-0 mr-4 mt-0 z-40">
+          <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+    
+        <!-- Mobile Navigation links -->
+        <div v-if="showNavLinks" class="flex-col bg-[#1D342C] text-white space-y-4 items-center font-bold lg:hidden w-12/12 pt-2 px-4">
+          <div>
+            <RouterLink class="hover:text-[#bebebe] text-[#959595]" to="/">About</RouterLink>
+          </div>
+          <div>
+            <RouterLink class="hover:text-[#bebebe] text-[#959595]" to="/">Tokenomics</RouterLink>
+          </div>
+          <div>
+            <RouterLink class="hover:text-[#bebebe]" to="/whitepaper">WHITEPAPER</RouterLink>
+          </div>
+          <div>
+            <a class="hover:text-[#bebebe]" href="#">FAQS</a>
+          </div>
+    
+        </div>
+    
+        <!-- Desktop Navigation links -->
+        <nav class="hidden lg:flex flex-row justify-between py-4 mx-auto bg-[#1D342C] items-center">
+          <div class="mx-auto">
+              <img class="w-[90px] absolute" src="images/logo-land.png" alt="Logo" srcset="">
+          </div>
+    
+          <!-- Navigation links -->
+          <div class="flex-row text-white space-x-12 p-4 items-center font-bold lg:px-8 mx-auto xl:px-0 lg:flex">
+            <a class="hover:text-[#bebebe]" href="https://landvanons.nl/">Bekijk de website</a>
+            <a class="hover:text-[#bebebe]" href="#">Download</a>
+          </div>
+        </nav>
+      </header>
+
+    <main>
+        <div class="bg-[#1D342C]">
+          <div class="container mx-auto">
+            <div class="pt-16 flex flex-col ">
+              <div class=" my-auto flex lg:flex-row flex-col-reverse justify-between items-center  mx-auto">
+                <div class="mx-auto mb-8 p-8 lg:p-0 text-white">
+                  <h2 class="font-bold text-3xl "><b>Welkom bij de land van ons game!</b></h2>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="container mx-auto">
+          <div class="flex lg:flex-row flex-col">
+            <div
+              class="lg:w-4/12 bg-white m-12 rounded lg:h-96 shadow-lg shadow-black flex flex-col justify-center space-y-6 px-4">
+              <p class="text-center text-4xl font-extrabold ">Stay Ahead with Price Alerts!</p>
+              <p class="flex justify-center text-8xl">🚀</p>
+              <p class="text-center">Activate our Telegram bot now to receive instant price alerts for Spybot. Never miss a
+                crucial market move –
+                be the first to know and make informed decisions. Join the Spybot community for timely updates and
+                opportunities!</p>
+            </div>
+            <div
+              class="lg:w-4/12 bg-[#4A993B] m-8 rounded lg:h-96 shadow-lg shadow-black  flex flex-col justify-center space-y-6 px-4">
+              <p class="text-center text-4xl font-extrabold ">Leer hoe het is om groen te leven!</p>
+              <p class="flex justify-center text-8xl">💼</p>
+              <p class="text-center">Harness the power of our Telegram bot to effortlessly track all transactions from your
+                wallet. Stay in
+                control and gain real-time insights into your Spybot holdings. It's the ultimate tool for managing your
+                portfolio with precision and ease.</p>
+            </div>
+            <div
+              class="lg:w-4/12 bg-white m-12 rounded lg:h-96 shadow-lg shadow-black  flex flex-col justify-center space-y-6 px-4">
+              <p class="text-center text-4xl font-extrabold ">Scan Wallets Securely with Spybot!</p>
+              <p class="flex justify-center text-8xl">🔍</p>
+              <p class="text-center">Curious about a wallet's activity? Utilize our Telegram bot to scan any wallet address
+                and unveil its
+                transaction history. Whether you're researching or ensuring security, Spybot has you covered. Empower yourself
+                with comprehensive wallet insights – start scanning now!</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="container mx-auto mb-8 text-white">
+          <div class="flex lg:flex-row flex-col items-center">
+            <div class="lg:w-4/12 mx-auto m-4 p-4">
+              <img class="w-7/12 mx-auto lg:w-full" src="../assets/future-img.png">
+            </div>
+            <div class=" lg:w-5/12 m-8 p-8">
+              <h2 class="font-bold text-2xl mb-4">Elevating Your Crypto Journey</h2>
+              <p>
+                Embark on a seamless crypto experience with Spybot, where our Telegram bot utilities redefine how you navigate
+                the digital currency realm. Receive instant price alerts, effortlessly track your Spybot holdings, and
+                securely scan wallet addresses for comprehensive insights. Empower your crypto journey with Spybot – where
+                simplicity meets sophistication, and every utility is just a click away. Join us today and embrace the future
+                of streamlined crypto management!</p>
+    
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="bg-[#1D342C]">
+          <div class="container mx-auto p-8 ">
+            <h2 class="text-center text-white font-bold text-3xl">Tokenomics</h2>
+            <div class="flex lg:flex-row flex-col text-white mt-8 items-center">
+              <div class="mx-auto lg:w-4/12">
+                <p class="text-slate-400 mb-4">
+                  Our tokenomics features a 5% transaction tax, a capped supply of 1 million
+                  tokens for controlled scarcity, and no team tokens for decentralization. With no presale or private sale, we
+                  champion equal opportunity. The twist? A Revenue Sharing mechanism reinvests bot profits for sustained
+                  growth, aligning holders with success. It's a concise narrative of fairness and community-driven prosperity.
+                </p>
+                <div class="flex flex-col space-y-4">
+                  <p>5% Sell / buy tax</p>
+                  <p>1.000.000 supply</p>
+                  <p>0% Team tokens</p>
+                </div>
+              </div>
+              <div class="lg:w-4/12 mx-auto">
+                <img class=" lg:w-full lg-mt-0 mb-8 lg:mb-0 mx-auto" src="../assets/tokenm.png">
+              </div>
+            </div>
+    
+    
+          </div>
+        </div>
+    
+    
+    
+    
+      </main>
+
+      <footer class="bg-[#1D342C] rounded-lg shadow ">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img class="w-[80px] " src="../assets/spybotlogo.png" alt="Logo here" srcset="">
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <p class="text-white text-center">Copyright - 2024</p>
+        </div>
+    </footer>
+
+</body>
+</html>
