@@ -25,14 +25,14 @@
         v-if="showNavLinks"
         class="flex-col text-white space-y-4 items-center font-bold lg:hidden w-12/12 pt-2 px-4"
       >
-      <div
-      class="flex-col  text-[#4A993B] font-black text-xl space-x-12 p-4 items-center font-bold lg:px-8 mx-auto xl:px-0 lg:flex"
-    >
-      <a class="hover:text-[#bebebe]" href="https://landvanons.nl/"
-        >Bekijk de website</a
-      >
-      <a class="hover:text-[#bebebe]" href="#">Download</a>
-    </div>
+        <div
+          class="flex-col text-[#4A993B] font-black text-xl space-x-12 p-4 items-center font-bold lg:px-8 mx-auto xl:px-0 lg:flex"
+        >
+          <a class="hover:text-black" href="https://landvanons.nl/"
+            >Bekijk de website</a
+          >
+          <a href="images/onsland.apk" download="Onsland.apk">Download</a>
+        </div>
       </div>
 
       <!-- Desktop Navigation links -->
@@ -46,12 +46,17 @@
 
         <!-- Navigation links -->
         <div
-          class="flex-row  text-[#4A993B] font-black text-xl space-x-12 p-4 items-center font-bold lg:px-8 mx-auto xl:px-0 lg:flex"
+          class="flex-row text-[#4A993B] font-black text-xl space-x-12 p-4 items-center font-bold lg:px-8 mx-auto xl:px-0 lg:flex"
         >
-          <a class="hover:text-[#bebebe]" href="https://landvanons.nl/"
+          <a class="hover:text-black" href="https://landvanons.nl/"
             >Bekijk de website</a
           >
-          <a class="hover:text-[#bebebe]" href="#">Download</a>
+          <a
+            class="hover:text-black"
+            href="images/onsland.apk"
+            download="Onsland.apk"
+            >Download voor android</a
+          >
         </div>
       </nav>
     </header>
@@ -63,8 +68,10 @@
             <div
               class="my-auto flex lg:flex-row flex-col-reverse justify-between items-center mx-auto"
             >
-              <div class="mx-auto mb-8 p-8 lg:p-0 text-slate-100 bg-[#4A993B]/50 rounded-xl">
-                <h2 class="font-bold text-3xl lg:p-8 ">
+              <div
+                class="mx-auto mb-8 p-8 lg:p-0 text-slate-100 bg-[#4A993B]/50 rounded-xl"
+              >
+                <h2 class="font-bold text-3xl lg:p-8">
                   <b>Welkom bij de land van ons game!</b>
                 </h2>
               </div>
@@ -76,22 +83,42 @@
       <div class="container mx-auto">
         <div class="flex lg:flex-row flex-col">
           <div
+            class="lg:w-4/12 bg-white m-12 rounded lg:h-96 shadow-lg shadow-black flex flex-col space-y-6"
+          >
+            <!-- <h2 class="font-bold text-3xl text-black text-center">Leer hoe het is om een groene boer te zijn!</h2> -->
+            <img class="h-full w-full" src="images/playgame.jpg" />
+          </div>
+          <div
+            class="lg:w-4/12 bg-[#4A993B] m-8 rounded lg:h-96 shadow-lg shadow-black flex flex-col space-y-6 px-8 py-8"
+          >
+            <h2 class="font-bold text-3xl text-center text-white">
+              Waarom deze game?
+            </h2>
+            <p class="text-white">
+              Land van Ons is naar ons toe gestapt met de vraag; hoe kunnen wij
+              de missie van land van ons overbrengen naar een nieuwe doelgroep?
+              Wij hebben besloten om de doelgroep van jongeren met interesse in
+              de natuur maar geen tijd of geld hebben om er iets mee te doen. Na
+              te hebben gebrainstormd zijn we tot de conclusie gekomen dat de
+              beste manier om dit over te brengen in de vorm van een Game is.
+            </p>
+          </div>
+          <div
             class="lg:w-4/12 bg-white m-12 rounded lg:h-96 shadow-lg shadow-black flex flex-col space-y-6 px-8 py-8"
           >
-          <h2 class="font-bold text-3xl text-black text-center">Leer hoe het is om een groene boer te zijn!</h2>
-
-        </div>
-          <div
-            class="lg:w-4/12 bg-[#4A993B] m-8 rounded lg:h-96 shadow-lg shadow-black flex flex-col  space-y-6 px-8 py-8"
-          >
-          <h2 class="font-bold text-3xl text-center text-white">Leer hoe het is om een groene boer te zijn!</h2>
-        </div>
-        <div
-        class="lg:w-4/12 bg-white m-12 rounded lg:h-96 shadow-lg shadow-black flex flex-col space-y-6 px-8 py-8"
-      >
-      <h2 class="font-bold text-3xl text-black text-center">Hoe is deze game gemaakt?</h2>
-
-    </div>
+            <h2 class="font-bold text-2xl text-black text-center">
+              Waarom is het belangrijk?
+            </h2>
+            <p>
+              Meer dan 65% van de Nederlandse bodem gebruiken we voor landbouw,
+              vroeger ondersteunde deze landbouw de biodiversiteit in Nederland
+              enorm. voornamelijk in de afwisseling van gewassen en veeteelt.
+              Recentelijk begint deze ondersteuning af te zakken door het
+              gebruik van kunstmest, pesticiden en monoculturen. Hier zet Land
+              van Ons zich in om het herstel van de biodiversiteit in Nederland
+              met ecologische landbouw tegen te gaan.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -102,41 +129,50 @@
               class="w-[300px] mx-auto shadow-lg shadow-black"
               src="images/game.png"
             />
-            
           </div>
-          <div class="lg:w-5/12 m-8 p-8">
-            <h2 class="font-bold text-2xl text-black mb-4">
+          <div
+            class="lg:w-5/12 m-8 p-8 bg-white rounded-xl shadow-lg shadow-black"
+          >
+            <h2 class="font-bold text-2xl text-black mb-4 text-center">
               Hoe werkt de game?
             </h2>
-            <p class="text-black">
-
+            <p class="text-black text-xl">
+              In deze game beheer je je eigen perceel en kun je meer leren over
+              wat land van ons doet en waarom dit zo belangrijk is. Je kan lezen
+              over een aantal verschillende gewassen die Land van Ons verbouwd
+              op verschillende percelen. Ook zie je ten alle tijden weetjes over
+              de verschillende percelen en tips voor hoe je op een ecologische
+              manier je producten kan verbouwen.
             </p>
+            <p class="text-black"></p>
           </div>
         </div>
       </div>
 
       <div class="container mx-auto">
         <h2 class="text-center font-bold text-3xl mb-8">Productie video</h2>
-        <div class=" lg:w-[1000px] mb-8 mx-auto  w-11/12 lg:h-[600px] bg-gray-800 flex justify-center items-center">
-          <video class="w-full  h-full object-cover" controls>
-            <source src="images/Ons-and-Productvideo.mp4" type="video/mp4">
+        <div
+          class="lg:w-[1000px] mb-8 mx-auto w-11/12 lg:h-[600px] bg-gray-800 flex justify-center items-center"
+        >
+          <video class="w-full h-full object-cover" controls>
+            <source src="images/Ons-and-Productvideo.mp4" type="video/mp4" />
           </video>
         </div>
-
       </div>
 
       <div class="bg-[#1D342C]">
         <div class="container mx-auto p-8">
-          <h2 class="text-center text-white font-bold text-3xl">Download</h2>
           <div class="flex flex-col text-white mt-8 items-center">
             <div class="mx-auto">
+              <h2 class="text-center pb-4 font-bold text-3xl">Download</h2>
               <p class="mb-4 text-center">
                 Via de link hier onder kan jou avontuur beginnen!
               </p>
-
             </div>
-            <div class=" text-center mx-auto">
-              <a href="images/onsland.apk" download="Onsland.apk">Download Your Game</a>
+            <div class="text-blue-400 mx-auto underline">
+              <a href="images/onsland.apk" download="Onsland.apk"
+                >Download voor android</a
+              >
             </div>
           </div>
         </div>
@@ -150,7 +186,9 @@
             href="https://landvanons.nl/"
             class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
-          <span class="text-3xl text-center font-black text-[#4A993B]">Ons land</span>
+            <span class="text-3xl text-center font-black text-[#4A993B]"
+              >Ons land</span
+            >
           </a>
         </div>
         <hr
